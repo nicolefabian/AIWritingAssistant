@@ -22,13 +22,13 @@ analyzeRouter.post('/', async (req, res) => {
               },
             ],
             max_tokens: 150, // maximum number of tokens to generate, the higher token means higher response
-            n: 3,
-            stop: null,
-            temperature: 0.7,
+            n: 3, // how many options to choose from 
+            stop: null, // stop generating after the sentence
+            temperature: 0.7, // higher temperature means more random
           },
           {
             headers: {
-              "Content-Type": "application/json",
+              "Content-Type": "application/json", //returning json
               Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
             },
           }
@@ -37,10 +37,13 @@ analyzeRouter.post('/', async (req, res) => {
         const rephrasedSentences = response.data.choices.map((choice) =>
           choice.message.content.trim()
         );
-    
         res.json({ rephrasedSentences });
       } catch (error) {
         console.error("Error processing sentence:", error);
         res.status(500).json({ error: "Error processing sentence" });
       }
     });
+
+//export
+module.exports = analyzeRouter
+
