@@ -19,8 +19,8 @@ const about = () => {
           </p>
         </div>
 
-        <h2 className="text-3xl font-semibold mb-6 text-center text-cambridgeBlue">
-          Core Features
+        <h2 className="text-3xl font-semibold mb-6 text-center text-lightGrey">
+          <span className="bg-eggshell border-2 border-solid border-eggshell px-4 py-2 rounded-md">Core Features </span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -46,16 +46,16 @@ const about = () => {
           />
         </div>
 
-        <div className="bg-blue-600 text-white rounded-lg p-8 text-center">
+        <div className="bg-cambridgeDarkBlue text-white rounded-lg p-8 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Take Your Writing to the Next Level?
           </h2>
           <p className="text-xl mb-6">
-            Join the growing community of users who have transformed their writing with our AI Writing Platform.
+            Join the growing community of users using our platform.
           </p>
           <Link
             to="/write"
-            className="bg-white text-blue-600 px-8 py-3 rounded-full font-bold text-lg hover:bg-blue-100 transition duration-300"
+            className="bg-white text-cambridgeDarkBlue px-8 py-3 rounded-full font-bold text-lg hover:bg-eggshell transition duration-300"
           >
             Get Started Today
           </Link>
