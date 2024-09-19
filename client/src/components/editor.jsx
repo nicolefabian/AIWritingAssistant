@@ -96,7 +96,7 @@ const editor = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="md:col-span-2">
           <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-blue-600">
+            <h2 className="text-2xl font-bold mb-4 text-lightGrey">
               AI Writing Assistant
             </h2>
             <p className="mb-4 text-gray-600">
@@ -125,20 +125,20 @@ const editor = () => {
               title="Spell Checked Text"
               text={spellCheckedText}
               onAccept={() => addCorrectedSentence(spellCheckedText)}
-              icon={<FaSpellCheck className="text-green-500" />}
+              icon={<FaSpellCheck className="text-sunset" />}
             />
             <ResultSection
               title="Grammar Checked Text"
               text={grammarCheckedText}
               onAccept={() => addCorrectedSentence(grammarCheckedText)}
-              icon={<SiGrammarly className="text-blue-500" />}
+              icon={<SiGrammarly className="text-sunset" />}
             />
           </div>
 
           {selectedSentence && (
             <div className="bg-white shadow-lg rounded-lg p-6 my-8">
               <h3 className="text-xl font-semibold mb-4 flex items-center">
-                <FaPencilAlt className="mr-2 text-purple-500" />
+                <FaPencilAlt className="mr-2 text-sunset" />
                 Selected Sentence:
               </h3>
               <p className="mb-4">{selectedSentence}</p>
@@ -151,7 +151,7 @@ const editor = () => {
           {rephrasedSentences.length > 0 && (
             <div className="bg-white shadow-lg rounded-lg p-6 my-8">
               <h3 className="text-xl font-semibold mb-4 flex items-center">
-                <FaSyncAlt className="mr-2 text-indigo-500" />
+                <FaSyncAlt className="mr-2 text-sunset" />
                 Rephrased Sentences:
               </h3>
               {rephrasedSentences.map((sentence, index) => (
@@ -175,7 +175,7 @@ const editor = () => {
         <div className="md:col-span-1">
           <div className="bg-white shadow-lg rounded-lg p-6 sticky top-8">
             <h3 className="text-xl font-semibold mb-4 flex items-center">
-              <FaCheck className="mr-2 text-green-500" />
+              <FaCheck className="mr-2 text-cambridgeBlue" />
               Corrected Sentences
             </h3>
             <p className="mb-4 text-gray-600">
@@ -206,7 +206,7 @@ const editor = () => {
 const Button = ({ onClick, children, icon }) => ( 
   <button
     onClick={onClick}
-    className="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700 transition duration-300 flex items-center"
+    className="bg-cambridgeDarkBlue text-white px-4 py-2 rounded-full font-semibold hover:bg-white hover:text-cambridgeDarkBlue border-2 border-solid border-cambridgeDarkBlue transition duration-300 flex items-center"
   >
     {icon && <span className="mr-2">{icon}</span>}
     {children}

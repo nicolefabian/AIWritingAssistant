@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import './index.css';
-import ai from './images/ai.png';
+import logo from "./images/ailogo.png";
 import {PrivyProvider} from '@privy-io/react-auth';
 
 import App from './App';
@@ -20,7 +20,7 @@ root.render(
         appearance: {
           theme: 'light',
           accentColor: '#676FFF',
-          logo: ai,
+          logo: logo,
         },
         // Create embedded wallets for users who don't have a wallet
         embeddedWallets: {

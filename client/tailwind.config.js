@@ -11,9 +11,10 @@ export default {
         burntSienna: '#e07a5fff',
         delftBlue: '#3d405bff',
         cambridgeBlue: '#81b29aff',
-        sunset: '#f2cc8fff',
+        sunset: '#ceac76',
         cambridgeDarkBlue: '#5f8774',
-        grey: '#212a25',
+        cambridgeLightBlue: '#b0cfc0',
+        lightGrey: '#212a25',
       },
       backgroundImage: {
         'gradient-burnt-sienna-cambridge-blue': 'linear-gradient(to right, #e07a5f, #81b29a)',

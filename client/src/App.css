@@ -15,15 +15,19 @@
   --burnt-sienna: #e07a5fff;
   --delft-blue: #3d405bff;
   --cambridge-blue: #81b29aff;
-  --sunset: #f2cc8fff;
+  --sunset: #ceac76;
   --cambridge-darkBlue: #5f8774;
-  --grey: #212a25;
+  --cambridge-lightBlue: #93aca0;
+  --light-grey: #212a25;
 }
 
 body {
   font-family: 'Courier-Prime', monospace;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  color: var(--light-grey);
+}
+
+main {
+  margin: 0 2em; 
 }
 
 
