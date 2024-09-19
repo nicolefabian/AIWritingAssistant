@@ -8,14 +8,14 @@ const Navbar = () => {
 
   if (!ready) {
     return (
-      <div className="flex justify-center items-center h-16 bg-gradient-to-r from-blue-600 to-purple-600">
+      <div className="flex justify-center items-center h-16 bg-gradient-burnt-sienna-cambridge-blue">
         <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-white"></div>
       </div>
     );
   }
 
   return (
-    <nav className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-6">
+    <nav className="text-white py-4 px-6">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-6">
           <Link
@@ -25,24 +25,22 @@ const Navbar = () => {
             <FaPencilAlt className="text-2xl" /> {/* Logo icon */}
             <span>AI Writing Assistant</span>
           </Link>
-          <div className="hidden md:flex space-x-4">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-            {authenticated && <NavLink to="/write">Write</NavLink>}
-          </div>
         </div>
-        <div>
+        <div className="flex items-center space-x-4">
+          <NavLink to="/" className="text-black">Home</NavLink>
+          <NavLink to="/about" className="text-black">About</NavLink>
+          {authenticated && <NavLink to="/write" className="text-black">Write</NavLink>}
           {authenticated ? (
             <button
               onClick={logout}
-              className="bg-white text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition duration-300"
+              className="bg-white text-blue-600 px-4 py-2 rounded-md font-semibold hover:bg-delftBlue hover:text-white transition duration-300"
             >
               Logout
             </button>
           ) : (
             <button
               onClick={login}
-              className="bg-white text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition duration-300"
+              className="border-2 border-solid border-cambridgeBlue bg-white text-cambridgeDarkBlue px-4 py-2 rounded-md font-semibold hover:bg-cambridgeBlue hover:text-white transition duration-300"
             >
               Login
             </button>
@@ -56,7 +54,7 @@ const Navbar = () => {
 const NavLink = ({ to, children }) => (
   <Link
     to={to}
-    className="text-white hover:text-blue-200 transition duration-300"
+    className="text-grey hover:text-cambridgeDarkBlue transition duration-300"
   >
     {children}
   </Link>

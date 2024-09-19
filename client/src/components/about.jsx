@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const about = () => {
   return (
-    <div className="container mx-auto px-4 py-12 bg-gray-100 min-h-screen">
+    <div className="container mx-auto px-4 py-12 min-h-screen">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8 text-blue-600">
+        <h1 className="text-4xl font-bold text-center mb-8 text-delftBlue">
           About Our AI Writing Platform
         </h1>
 
@@ -19,7 +19,7 @@ const about = () => {
           </p>
         </div>
 
-        <h2 className="text-3xl font-semibold mb-6 text-center text-gray-800">
+        <h2 className="text-3xl font-semibold mb-6 text-center text-cambridgeBlue">
           Core Features
         </h2>
 

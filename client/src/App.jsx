@@ -7,6 +7,10 @@ import About from "./components/about";
 import Editor from "./components/editor";
 import LoginPage from "./components/login";
 import PrivateRoute from "./components/privateRoute";
+
+import './index.css';
+import './App.css';  
+
 export default function App() {
   return (
     <BrowserRouter>

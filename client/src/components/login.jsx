@@ -22,7 +22,7 @@ function LoginPage() {
   }
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-burnt-sienna-cambridge-blue">
       <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md text-center">
         <h1 className="text-3xl font-bold mb-2 text-gray-800">
           AI Writing Assistant
