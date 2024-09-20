@@ -133,3 +133,19 @@ A web application designed to enhance your writing experience using the power of
        - After reviewing your corrections, you can accept them.
        - The corrected sentences will appear in the `Corrected Sentences` section on the right for future reference.
 
+## **Screenshots**
+### **Login**
+![Screenshot 2024-09-20 at 12-12-06 AI Writing Assistant](https://github.com/user-attachments/assets/d9e994d6-2ad9-4436-971c-16228d7bcd1d)
+
+### **Unauthorised access, redirected to login page**
+![Screenshot 2024-09-20 at 12-11-55 AI Writing Assistant](https://github.com/user-attachments/assets/5959e8e0-ebb7-479a-8f31-962db041966a)
+
+### **Home page**
+![Screenshot 2024-09-20 at 12-09-03 AI Writing Assistant](https://github.com/user-attachments/assets/022185f8-9f0b-416c-83e5-0aadde8c71f1)
+
+### **About page**
+![Screenshot 2024-09-20 at 12-12-16 AI Writing Assistant](https://github.com/user-attachments/assets/2c65ed2c-9675-47b8-adaa-bab7793320ff)
+
+### **Write page**
+![Screenshot 2024-09-20 at 11-45-54 AI Writing Assistant](https://github.com/user-attachments/assets/eb6aca40-8492-46a6-a129-c35be78298d0)
+
