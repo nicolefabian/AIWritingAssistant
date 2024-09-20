@@ -47,14 +47,14 @@ const Navbar = () => {
           {authenticated ? (
             <button
               onClick={logout}
-              className="bg-white text-cambridgeDarkBlue px-4 py-2 rounded-md font-semibold hover:bg-cambridgeDarkBlue hover:text-white transition duration-300"
+              className="bg-white text-cambridgeDarkBlue px-4 py-2 rounded-md font-semibold hover:bg-eggshell hover:text-gray-600 hover:border-2 hover:border-solid hover:border-cambridgeBlue transition duration-300"
             >
               Logout
             </button>
           ) : (
             <button
               onClick={login}
-              className="border-2 border-solid border-cambridgeBlue bg-white text-cambridgeDarkBlue px-4 py-2 rounded-md font-semibold hover:bg-cambridgeBlue hover:text-white transition duration-300"
+              className="border-2 border-solid border-cambridgeBlue bg-white text-cambridgeDarkBlue px-4 py-2 rounded-md font-semibold hover:bg-eggshell hover:text-gray-600 transition duration-300"
             >
               Login
             </button>

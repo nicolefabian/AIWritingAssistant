@@ -21,7 +21,7 @@ const Home = () => {
               </p>
               <Link
                 to="/write"
-                className="bg-cambridgeBlue text-white px-8 py-3 rounded-md font-semibold text-lg hover:bg-white hover:text-cambridgeDarkBlue hover:border-2 hover:border-solid hover:border-cambridgeBlue transition duration-300"
+                className="bg-cambridgeBlue text-white px-8 py-3 rounded-md font-semibold text-lg hover:bg-eggshell hover:text-gray-600 hover:border-2 hover:border-solid hover:border-cambridgeBlue transition duration-300"
               >
                 Get Started with Writing
               </Link>

@@ -24,7 +24,7 @@ analyzeRouter.post('/', async (req, res) => {
             max_tokens: 150, // maximum number of tokens to generate, the higher token means higher response
             n: 3, // how many options to choose from 
             stop: null, // stop generating after the sentence
-            temperature: 0.7, // higher temperature means more random
+            temperature: 2, // higher temperature means more random
           },
           {
             headers: {
